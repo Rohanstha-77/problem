@@ -1,0 +1,6 @@
+problem faced
+
+problem 1
+
+The error "Unreachable code detected" occurs because the code after the return statement is never executed. In JavaScript, when a return statement is encountered within a function, the function execution immediately stops, and the specified value is returned.
+The return statements were inside the if and else blocks, which meant the function would immediately exit after either condition was met, preventing the console.log from running.
