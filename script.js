@@ -134,3 +134,68 @@
 //   return (num1 === 50 || num2 === 50 ) || (num1 + num2 === 50)
 // }
 // console.log(checkPairNumber(25,25))
+
+// problem 9
+//Write a JavaScript exercise to get the filename extension. 
+
+// function FileExtension(string){
+//     let result =string.split(".").pop()
+//     return `The file extension is ${result}`
+// }
+// console.log(FileExtension("abc.java"))
+
+// problem 10
+// Write a JavaScript program to check whether two given integer values are in the range 50..99 (inclusive). Return true if either of them falls within the range.
+
+// function CheckInteger(num1,num2){
+//     let result = (num1 >=50 &&num1<=99) || (num2 >=50 &&num2<=99) ? true : false
+//     return result
+// }
+
+// console.log(CheckInteger(15,80))
+
+
+// problem 9
+// Write a JavaScript program to check whether a string "Script" appears at the 5th (index 4) position in a given string. If "Script" appears in the string, return the string without "Script" otherwise return the original one.  
+
+// function beforeScript(string){
+//     let result = string.substring(4,10) === "script" ? string.substring(0,4) : string
+//     return result
+// }
+// console.log(beforeScript("Javascript"))
+// console.log(beforeScript("Java script"))
+// console.log(beforeScript("Coffeescript"))
+
+// problem 10
+// Write a JavaScript program to reverse a given string.  
+
+// let reversedString = (string) => {
+//     let splitString = string.split("")
+//     let EmptyArray = []
+//     for(let i = splitString.length ; i>=0 ; --i){
+//         EmptyArray.push(splitString[i])
+//     }
+//     return EmptyArray.join('')
+// }
+// console.log(reversedString("Nikesh"))
+
+
+// simple way
+
+// let reversedString = (string) => {
+//     return string.split("").reverse().join("");  
+// };
+
+// console.log(reversedString("Nikesh"));
+
+// problem 11
+// Write a JavaScript program to capitalize the first letter of each word in a given string.
+
+// let capitalizeFirstLetter = (string) => {
+//     let StringIntoArray = string.split(" ")
+//     for(let i = 0 ; i >= StringIntoArray.length ; i++){
+//        StringIntoArray[i] = StringIntoArray[i][0].toUpperCase() + StringIntoArray[i].substring(1)
+//     }
+//     return StringIntoArray.join(' ')
+// }
+// console.log(capitalizeFirstLetter("Nikesh Shrestha"))
