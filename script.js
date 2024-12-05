@@ -1,4 +1,7 @@
 // // Problem 1
+// Write a JavaScript program to get the current date.  
+//Write a JavaScript program to display the current day and time in the following format.  
+
 // var date = new Date()
 // var day = date.getDay()
 // var dayArray = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
@@ -24,7 +27,10 @@
 // var formatedMonth = month >= 9?month:`0${month}`
 // console.log(`${formatedMonth}-${formatedDay}-${year}`)
 
+
 //problem 2
+// Write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7.  
+
 // let a=12
 // let b=13
 // let c=16
@@ -41,6 +47,8 @@
 // }
 
 // // problem 3
+// Write a JavaScript program to find out if 1st January will be a Sunday between 2014 and 2050.
+
 // for(let year = 2014 ; year <= 2050 ; year++){
 //   // year: The year you want the date to represent.
 //   // 0: Represents January since months in JavaScript's   Date object are zero-indexed (i.e., 0 for January,   11 for December).
@@ -53,6 +61,8 @@
 // }
 
 // // problem 4
+// Write a JavaScript exercise to create a variable using a user-defined name.  
+
 // let name = prompt("Enter name")
 // let value = prompt("Enter value")
 
@@ -64,6 +74,13 @@
 // console.log(`The name is ${name} and the value is`, object.name)
 
 // // problem 5
+// Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.  
+// [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
+// Expected Output :
+// 60°C is 140 °F
+// 45°F is 7.222222222222222°C
+
+
 // let toFahernheit = (cTemp)=> {
 //   return 5/9 * (cTemp-32) + '\xB0C'
 // }
@@ -111,7 +128,9 @@
 // console.log(absoluteDifference(12))
 
 // problem 8
-const checkPairNumber = (num1 , num2) => {
-  return (num1 === 50 || num2 === 50 ) || (num1 + num2 === 50)
-}
-console.log(checkPairNumber(25,25))
+// Write a JavaScript program to check a pair of numbers and return true if one of the numbers is 50 or if their sum is 50.  
+
+// const checkPairNumber = (num1 , num2) => {
+//   return (num1 === 50 || num2 === 50 ) || (num1 + num2 === 50)
+// }
+// console.log(checkPairNumber(25,25))
