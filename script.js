@@ -199,3 +199,46 @@
 //     return StringIntoArray.join(' ')
 // }
 // console.log(capitalizeFirstLetter("Nikesh Shrestha"))
+
+// problem 12
+// Write a JavaScript program to produce a new string that has the first 3 characters in lower case from a given string. If the string length is less than 3 convert all the characters to upper case.
+
+// let upperCase = (string) => {
+//     if(string.length < 3){
+//        return string.toUpperCase() 
+//     }
+//     return frontSting = string.substring(0,3).toLowerCase() + string.substring(3).toUpperCase()
+
+// }
+
+// console.log(upperCase("Ja"))
+// console.log(upperCase("JaVa"))
+// console.log(upperCase("JavaScript"))
+
+// problem 13
+// Write a JavaScript program to check a set of three numbers; if the three numbers are the same return 30; otherwise return 20; and if two numbers are the same return 40.
+
+// let number = (a,b,c)=>{
+//     let checkNumber = (a === b && b===c && c===a) ? 30 : (a===b || b===c || c===a) ? 40:20 
+//     return checkNumber
+// }
+// console.log(number(12,12,13))
+// console.log(number(11,12,11))
+// console.log(number(12,15,14))
+// console.log(number(12,15,15))
+// console.log(number(15,15,15))
+
+// problem 14
+// Write a JavaScript application that transforms a provided numerical value into hours and minutes.
+
+// let NumberIntoTime =(num) => {
+//     // let hrs = Math.floor(num / 60)
+//     // let min = num % 60
+
+//     return Math.floor(num / 60) +"hrs"  +  num % 60 +"min"
+// }
+
+// console.log(NumberIntoTime(750))
+// console.log(NumberIntoTime(450))
+// console.log(NumberIntoTime(1441))
+
