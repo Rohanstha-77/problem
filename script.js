@@ -242,3 +242,44 @@
 // console.log(NumberIntoTime(450))
 // console.log(NumberIntoTime(1441))
 
+// problem 15
+// Write a JavaScript program to create a new string from a given string by changing the position of the first and last characters. The string length must be broader than or equal to 1.
+
+// let swapFirstAndLast = (string)=>{
+//     // let checkString = string.length <= 1 && console.log(string) 
+
+//     if(string.length <= 1){
+//         return string
+//     }
+//     let middleChar = string.substring(1,string.length-1)
+//     return string.at(string.length -1) + middleChar + string.at(0)
+// }
+// console.log(swapFirstAndLast("nikesh"))
+// console.log(swapFirstAndLast("n"))
+
+// problem 16
+// Write a JavaScript program to create another string from a given string with the first character of the given string added to the front and back.  
+
+// let addFrontToLast = (string) => {
+//     if(string.length <= 1){
+//         return string
+//     }
+//     let firstChar = string.substring(0,1)
+
+//     return firstChar + string + firstChar
+// }
+// console.log((addFrontToLast("nikesh")))
+
+// problem 17
+
+// slug url
+
+// function IntoSlugURL(string){
+//     let URL = "www.example.com/"
+//     let slug = string.split(" ")
+//     return URL + slug.join("-")
+// }
+// console.log(IntoSlugURL("hello world"))
+
+// problem 18
+
