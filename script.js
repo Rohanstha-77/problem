@@ -282,4 +282,65 @@
 // console.log(IntoSlugURL("hello world"))
 
 // problem 18
+// Write a JavaScript program to remove a character at the specified position in a given string and return the modified string.
+
+// let removeChar = (string,position)=>{
+//     let part1 = string.substring(0,position)
+//     let part2 = string.substring(position + 1, string.length)
+//     return part1 + part2 
+// }
+// console.log(removeChar("java",2))
+// console.log(removeChar("javaScript",6))
+
+
+// splice example
+
+// const array = [0,3,4,5,6,7,8,9]
+// let editArray=array.splice(0,2)
+// console.log(array)
+// console.log(editArray)
+
+// problem 19
+// let array = [1,2,3,4,5,6,7,8,9]
+
+// let first = array.shift()
+// let last = array.pop()
+// console.log([first,last])
+
+// problem 20
+
+// Write a JavaScript program to divide a given array of positive integers into two parts. First element belongs to the first part, second element belongs to the second part, and third element belongs to the first part and so on. Now compute the sum of two parts and store it in an array of size two.
+
+// let array = [1,3,6,2,5,10]
+// let array2 = array.splice(0,Math.floor(array.length / 2))
+// let result = [0,0]
+
+// for(let i = 0;i<array.length;i++){
+//     result[0]+=array[i]
+// }
+// for(let i = 0;i<array2.length;i++){
+//     result[1]+=array2[i]
+// }
+// console.log(result)
+
+
+// problem 21
+// Write a JavaScript program to break an URL address and put its parts into an array.
+
+// let breakUrl = (url) => {
+//     var result1  = url.split("://")
+//     let protocal = result1[0]
+//     result1 = result1[1].split('/')
+//     let domain = result1[0]
+//     result1.splice(0,1)
+//     if(!result1){
+//         return [protocal,domain]
+//     }
+
+//     return [protocal,domain,...result1]
+// }
+// console.log(breakUrl('https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-144.php'))
+// console.log(breakUrl('https://www.notion.so/JS-things-to-remember/13d928e6a8e880eb8e0cc611068e9c95'))
+// console.log(breakUrl('https://chatgpt.com/c/67586d92-1a28-800a-aef3-cd368e96d9eb/654325466213245132/16d565s65465v4654'))
+// console.log(breakUrl('https://chatgpt.com'))
 
