@@ -344,3 +344,43 @@
 // console.log(breakUrl('https://chatgpt.com/c/67586d92-1a28-800a-aef3-cd368e96d9eb/654325466213245132/16d565s65465v4654'))
 // console.log(breakUrl('https://chatgpt.com'))
 
+
+// problem22
+// number guessing game
+
+// let minNum = 1;
+// let maxNum = 100;
+// let answer = Math.floor(Math.random() * (maxNum - minNum))
+// console.log(guessNumber)
+// let running = true
+
+// while(running){
+//     let guessNumber = window.prompt("enter a number from " + minNum + " to " +maxNum)
+//     guessNumber = Number(guessNumber)
+//     if(isNaN(guessNumber)){
+//         window.alert("please a valid number")
+//     }else if(guessNumber < minNum || guessNumber > maxNum){
+//         window.alert("your guess number is out of range")
+//     }else{
+//         if(guessNumber != answer){
+//             window.alert("sorry Try again")
+//         }else{
+//             window.alert("congrats")
+//             running=false
+//         }
+//     }
+// }
+
+// problem 23
+
+// random hexdecimal color
+
+// note Pad a string with "0" until it reaches the length 4
+// toString(16) Converts the number into its hexadecimal (base-16)
+let generateRandomcolor = () =>{
+    let red = Math.floor(Math.random() * 256 ).toString(16).padStart(2,'0')
+    let green = Math.floor(Math.random() * 256 ).toString(16).padStart(2,'0') 
+    let blue = Math.floor(Math.random() * 256 ).toString(16).padStart(2,'0')
+    return `#${red}${green}${blue}`
+}
+console.log(generateRandomcolor())

@@ -1,4 +1,9 @@
-html {
-  height: 100%;
-  width: 100%;
+.mainContainer{
+  display: flex;
+  justify-content: center;
+}
+.container{
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
 }
