@@ -377,10 +377,80 @@
 
 // note Pad a string with "0" until it reaches the length 4
 // toString(16) Converts the number into its hexadecimal (base-16)
-let generateRandomcolor = () =>{
-    let red = Math.floor(Math.random() * 256 ).toString(16).padStart(2,'0')
-    let green = Math.floor(Math.random() * 256 ).toString(16).padStart(2,'0') 
-    let blue = Math.floor(Math.random() * 256 ).toString(16).padStart(2,'0')
-    return `#${red}${green}${blue}`
+
+// let element = document.getElementById("container")
+// let colorByDefault = element.style.backgroundColor = "black"
+// document.getElementById("changeColor").addEventListener("click",function(){
+//     let red = Math.floor(Math.random() * 256 ).toString(16).padStart(2,'0')
+//     let green = Math.floor(Math.random() * 256 ).toString(16).padStart(2,'0') 
+//     let blue = Math.floor(Math.random() * 256 ).toString(16).padStart(2,'0')
+//     colorByDefault=`#${red}${green}${blue}`
+//     element.style.backgroundColor = colorByDefault
+// })
+
+
+// problem 24
+// handel form submission data in object and use cases of callback function
+
+// let btn = document.getElementById("submit")
+
+// btn.addEventListener("click",function(e){
+    //     e.preventDefault()
+    //     const formData = new FormData(form)
+    //     const object = {}
+    //     for(const [key,value] of formData.entries()){
+        //         object[name]= value
+        //     }
+        //     form.reset()
+        // })
+        // console.log(object)
+
+// example of call back (outside)
+let array = []
+let error = document.getElementById("errorMessage")
+let formObject = {}
+function HandelFormData(e){
+    e.preventDefault()
+    let form = document.getElementById("myForm")
+    let formData = new FormData(form)
+    for(const [key,value] of formData.entries()){
+        formObject[key] = value
+        
+    }
+    array.push(formObject)
+    form.reset()
+    // console.log(array)
+    updateData(array)
+    // show(array)
+
 }
-console.log(generateRandomcolor())
+
+function updateData(data){
+    console.log(data)
+    data.map(item =>{
+        document.getElementById("question").innerHTML = item.usename
+        document.getElementById("answer").innerHTML = item.age
+    })
+}
+
+// problem 25
+
+// Faq
+
+let count = 0
+function show(e){
+    e.preventDefault()
+
+    if(count%2 === 0){
+        document.getElementById("answer").style.display = "block"
+    }else{
+        document.getElementById("answer").style.display = "none"
+    }
+    count+=1
+}
+
+
+// let array=[{name:"nikesh",age:25},{name:"bishesh",age:25}]
+// array.map((item)=>{
+//     console.log(item.name)
+// })

@@ -1,9 +1,33 @@
-.mainContainer{
+/* Problem 23 */
+
+/* .mainContainer{
   display: flex;
   justify-content: center;
 }
-.container{
+#container{
   height: 200px;
   width: 50%;
-  background-color: powderblue;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+}
+
+button:hover {
+  background-color: #0056b3;
+} */
+
+/* end */
+
+
+#answer{
+  display: none;
 }

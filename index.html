@@ -9,12 +9,35 @@
 </head>
 
 <body>
-  <div class="mainContainer">
-    <div class="container">
+
+
+  <!-- hexadecimal color changer 
+    problem 23 -->
+
+  <!-- <div class="mainContainer">
+    <div id="container">
 
     </div>
   </div>
-  <button>Click me</button>
+  <button id="changeColor">Click me</button> -->
+
+  <!-- end -->
+
+
+  <form id="myForm" >
+    <input type="text" name="usename" id="username">
+    <input type="number" name="age" id="age">
+    <button onclick="HandelFormData(event)">submit</button>
+  </form>
+
+  <h1>Faq</h1>
+  <h2 id="errorMessage"></h2>
+  <button onclick="show(event)">+</button>
+  <h3 id="question"></h3>
+  <p id="answer"></p>
+
+
+
   <script src="script.js"></script>
 </body>
 
